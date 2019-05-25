@@ -1,0 +1,98 @@
+.Main-Wrapper{
+    width: 100%;
+    height : 100vh;
+}
+.Main-Wrapper__Main-Grid-Container{
+    display: grid;
+}
+
+/* #Media Queries
+================================================== */
+
+/* Large Desktop */
+@media screen and (min-width: 1441px) {
+
+    .Main-Wrapper__Main-Grid-Container{
+        grid-template-columns: 400px 1fr;
+    }
+
+}
+/* Smaller that standard */
+@media screen and (min-width: 960px) and (max-width: 1440px) {
+
+    .Main-Wrapper__Main-Grid-Container{
+        grid-template-columns: 250px 1fr;
+    }
+
+}
+/* Smaller than standard 960 (devices and browsers) */
+@media screen and (max-width: 959px) {
+
+    .Main-Wrapper__Main-Grid-Container{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+    .Main-Wrapper__Main-Grid-Container__Item:nth-child(1){
+
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-top : 120px;
+        overflow : hidden;
+        transition : max-height 0.50s ease;
+
+    }
+
+    .Main-Wrapper__Main-Grid-Container__Item:nth-child(2){
+
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-top : 120px;
+
+    }
+
+    .--zidx1{
+        z-index: 1;
+    }
+    .--zidx2{
+        z-index: 2;
+    }
+    .--show{
+
+        height: auto;
+        max-height: calc(100vh - 120px);
+    }
+    .--hide{
+
+        max-height: 0;
+        height : 0;
+        
+    }
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media screen and (max-width: 767px) {
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media screen and (max-width: 479px) {
+
+}

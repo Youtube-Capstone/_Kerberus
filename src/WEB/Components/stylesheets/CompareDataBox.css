@@ -1,0 +1,161 @@
+.CompareDataBox-Container{
+    min-height: 300px;
+    box-shadow: 2px 2px 2px #ccc;
+    background: hsl(0, 0%, 98%);
+    border-radius: 4px;
+    padding : 20px 20px;
+}
+
+.Three-Column-Grid{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.Model-Names-Row__Item-Names{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height : 32px;
+    box-shadow: 0 2px 2px #ccc;
+}
+.Model-Names-Row__Item-Names__Text{
+    color : hsl(231, 99%, 62%);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.Model-Names-Row__Item-Images{
+    height : 20vw;
+    border : 1px solid #ccc;
+    border-radius: 4px;
+}
+.Model-Names-Row__Item-Images img{
+    width : 100%;
+    height : 100%;
+    border-radius: 4px;
+}
+.CompareDataBox-Container__Divider-Row{
+    height : 1.5vw;
+}
+.Divider-Row__Divider{
+    border : none;
+    border-bottom : 1px solid #ccc;
+}
+.Section-Header{
+    margin : 0;
+    font-size: 20px;
+    color : hsl(200, 19%, 18%);
+}
+.Model-Infos-Row__Item{
+    box-shadow: 0 2px 2px #ccc;
+    margin-top : 10px;
+}
+.Data-Box__Item{
+    margin : 10px 0;
+    display: grid;
+    grid-template-columns: 5px 1fr;
+    box-shadow: 0 2px 2px #ccc;
+}
+.Data-Box__Item__Head{
+    background :hsl(225, 6%, 13%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Data-Box__Item__Head__Text{
+    color : white;
+}
+.Data-Box__Item__Body{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Data-Box__Item__Body__Value{
+    color : black;
+    font-size: 20px;
+}
+.Data-Box__Item__Link{
+    height : 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Data-Box__Item__Body__Value-Link{
+    text-decoration : none;
+    display: inline-block;
+    color : white;
+    background-color: #0070c9;
+    background: linear-gradient(#42a1ec, #0070c9);
+    border : 1px solid #07c;
+    border-radius: 4px;
+    width : 20%;
+    font-size: 12px;
+    padding : 4px 15px;
+    text-align: center;
+}
+
+
+/* #Media Queries
+================================================== */
+
+/* Large Desktop */
+@media screen and (min-width: 1441px) {
+
+
+
+}
+/* Smaller that standard */
+@media screen and (min-width: 960px) and (max-width: 1440px) {
+
+
+
+}
+/* Smaller than standard 960 (devices and browsers) */
+@media screen and (max-width: 959px) {
+
+    .Section-Header{
+        
+        font-size: 2.5vw;
+        color : hsl(200, 19%, 18%);
+    }
+    .Data-Box__Item__Body__Value{
+        color : black;
+        font-size: 2vw;
+    }
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+
+
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media screen and (max-width: 767px) {
+    .Model-Names-Row__Item-Images{
+        height : 20vw;
+        border : 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .Data-Box__Item__Body__Value-Link{
+        
+        width : 40%;
+       
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media screen and (max-width: 479px) {
+
+}

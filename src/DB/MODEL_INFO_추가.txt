@@ -1,0 +1,185 @@
+ALTER TABLE MODEL_INFO add
+CPU varchar(63) NOT NULL
+MODEL_SIZE varchar(63) NOT NULL,
+MODEL_WEIGHT varchar(63) NOT NULL,
+DISPLAY_SIZE varchar(63) NOT NULL,
+DISPLAY_RESOLUTION varchar(63) NOT NULL,
+RAM varchar(63) NOT NULL,
+STORAGE varchar(63) NOT NULL,
+CAMERA varchar(63) NOT NULL,
+BATTERY varchar(63) NOT NULL,
+CHARGING_METHOD varchar(63) NOT NULL,
+PRICE varchar(63) NOT NULL,
+
+SPEC_URL varchar(63) NOT NULL;
+
+모델 종류
+
+아이폰 XS
+갤럭시 S9
+엘지 G7
+엘지 그램 15 2018
+삼성 노트북 9 ALWAYS
+갤럭시탭 S4
+아이패드 6세대
+아이패드 프로 3세대
+
+product_name =  "갤럭시탭 S4", "아이패드 6세대", "아이패드 프로 3세대"]
+filter_word = ["S4"],["6세대"],["프로","3세대"]]
+    
+
+
+갤럭시 S9
+
+CPU : 8 Core , 2.7GHz
+
+MODEL_SIZE : 147.7 x 68.7 x 8.5
+
+MODEL_WEIGHT : 163 g
+
+DISPLAY_SIZE : 5.8 형
+
+DISPLAY_RESOLUTION : 2960 * 1440 | QHD+ (Quad HD+)
+
+RAM : 4GB
+
+STORAGE : 64 | 128 | 256 GB
+
+CAMERA : 800만 화소 | 1200만 화소
+
+BATTERY : 3000 mAh
+
+CHARGING_METHOD : 유선충전 | 무선충전
+
+SPEC_URL - https://www.samsung.com/sec/smartphones/galaxy-s9-g960/SM-G960NGBAKOO/
+
+
+아이폰 XS
+
+CPU : 6 Core , 2.49GHz
+
+MODEL_SIZE : 143.6 x 70.9 x 7.7
+
+MODEL_WEIGHT : 177 g
+
+DISPLAY_SIZE : 5.8 형
+DISPLAY_RESOLUTION : 2436 x 1125 | Super Retina HD
+
+RAM : 4 GB
+STORAGE : 64 | 128 | 256 GB
+
+CAMERA : 700만 화소 | 1200만 화소
+
+BATTERY : 2658 mAh
+
+CHARGING_METHOD : 유선충전 | 무선충전
+
+SPEC_URL : https://www.apple.com/kr/iphone-xs/specs/
+
+—————
+
+엘지 G7
+
+CPU : 8 Core , 2.8 GHz
+
+MODEL_SIZE : 153.2 x 71.9 x 7.9
+
+MODEL_WEIGHT : 162 g
+
+DISPLAY_SIZE : 6.1 형
+
+DISPLAY_RESOLUTION : 3120 x 1440 | QHD+ (Quad HD+)
+
+RAM : 4 GB
+
+STORAGE : 64 | 128 GB
+
+CAMERA : 800만 화소 | 1600만 화소
+
+BATTERY : 3000 mAh
+
+CHARGING_METHOD : 유선충전 | 무선충전
+
+SPEC_URL - https://www.lge.co.kr/lgekor/product/mobile/smart-phone/productDetail.do?cateId=02&prdId=EPRD.327562#featureBtnsWrap
+
+----
+
+LG 전자 2018 그램 15Z980-GA5IK
+
+CPU : i5-8250U 4 Core , 1.6GHz(3.4GHz)
+MODEL_SIZE : 358 x 228 x 16.8
+MODEL_WEIGHT : 1095 g
+DISPLAY_SIZE : 39.6 cm (15.6 인치)
+DISPLAY_RESOLUTION : 1920 * 1080 | FHD (Full HD)
+RAM : 8GB
+STORAGE : SSD 256 GB
+
+BATTERY : 72Wh (최대 20시간, 동영상 19.5시간)
+SPEC_URL : https://www.lge.co.kr/lgekor/product/pc/notebook/productDetail.do?cateId=2170&prdId=EPRD.321443#featureBtnsWrap
+가격
+VGA : Intel UHD Graphics 620
+
+-----
+
+삼성전자 2019 노트북9 Always NT950XBV-G58A
+
+CPU : i7-8550U 4 Core , 1.8GHz(4.0GHz)
+MODEL_SIZE : 347.9 x 229.4 x 15.4
+MODEL_WEIGHT : 1290 g
+DISPLAY_SIZE : 38.1 cm (15 인치)
+DISPLAY_RESOLUTION : 1920 * 1080 | FHD (Full HD)
+RAM : 8GB
+STORAGE : SSD 256 GB
+
+BATTERY : 75Wh (최대 20시간, 동영상 19시간)
+SPEC_URL : https://www.samsung.com/sec/pc/notebook-nt900x5t-x78l/NT900X5T-X78L/
+가격
+VGA : NVIDIA GeForce MX150 Graphics
+
+참고링크 : 각 제품사별 official site, 다나와
+
+노트북 데이터 MODEL_INFO에 추가하고 태블릿 조사 마무리
+
+-----
+아이패드 6세대 Wifi
+
+CPU : A10 Fusion 4 Core , 2.34 GHz
+MODEL_SIZE : 240 x 169.5 x 7.5
+MODEL_WEIGHT : 469 g
+DISPLAY_SIZE : 9.7 형
+DISPLAY_RESOLUTION : 2048 * 1536 | Retina HD
+RAM : 2GB
+STORAGE : 32 | 128 GB
+CAMERA : 120만 화소 | 800만 화소
+BATTERY : 32.4Wh (10시간)
+SPEC_URL : https://www.apple.com/kr/ipad-9.7/specs/
+
+-----
+아이패드 프로 3세대 Wifi
+
+CPU : A12X 8 Core , 2.5 GHz
+MODEL_SIZE : 178.5 x 247.6 x 5.9
+MODEL_WEIGHT : 468 g
+DISPLAY_SIZE : 11.0 형 (27.94 cm)
+DISPLAY_RESOLUTION : 2388 * 1668 | Liquid Retina HD
+RAM : 4GB
+STORAGE : 64 | 256 | 512 GB | 1 TB
+CAMERA : 700만 화소 | 1200만 화소
+BATTERY : 29.37Wh (10시간)
+SPEC_URL : https://www.apple.com/kr/shop/buy-ipad/ipad-pro
+
+---
+
+갤럭시탭 S4
+
+CPU : 835 APQ8098 8 Core , 2.35 GHz+(1.9 GHz)
+MODEL_SIZE : 164.3 x 249.3 x 7.1
+MODEL_WEIGHT : 482 g
+DISPLAY_SIZE : 10.5 형 (26.6 cm)
+DISPLAY_RESOLUTION : 2560 * 1600 | WQXGA
+RAM : 6GB
+STORAGE : 64 | 256 GB
+CAMERA : 800만 화소 | 1300만 화소
+BATTERY : 7300mAh (16시간)
+SPEC_URL : https://www.samsung.com/sec/tablets/galaxy-tabs4-t835/SM-T835NZACKOO/
+

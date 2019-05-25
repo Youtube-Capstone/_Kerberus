@@ -1,0 +1,144 @@
+.TopBar-Grid-Container{
+    z-index: 3;
+    display: grid;
+    height : 60px;
+    background-color: #202124;
+    box-shadow: 0px 3px 9px black;
+    position: fixed;
+    width: 100%;
+}
+.TopBar-Grid-Container__Item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TopBar-Grid-Container__Item-Header-Text{
+
+    color : #ECEFF1;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 4px 4px 2px black;
+    cursor: pointer;
+    
+}
+.TopBar-Grid-Container__Item__Nav-Toogle-Container{
+
+    display: none;
+
+}
+#YOUTUBELOGO{
+    width : 60px;
+    margin-right: 20px;
+}
+#NAV_TOGGLE:hover{
+    color : hsl(10, 96%, 45%);
+}
+/* #Media Queries
+================================================== */
+
+/* Large Desktop */
+@media screen and (min-width: 1441px) {
+
+    .TopBar-Grid-Container{
+
+        grid-template-columns: 400px 1fr 400px;
+
+    }
+    .TopBar-Grid-Container__Item-Header-Text{
+
+        font-size: 30px;
+
+    }
+    #YOUTUBELOGO{
+
+        width : 60px;
+        margin-right: 20px;
+
+    }
+
+}
+/* Smaller that standard */
+@media screen and (min-width: 960px) and (max-width: 1440px) {
+
+    .TopBar-Grid-Container{
+
+        grid-template-columns: 300px 1fr 300px;
+
+    }
+    .TopBar-Grid-Container__Item-Header-Text{
+
+        font-size: 25px;
+
+    }
+    #YOUTUBELOGO{
+
+        width : 50px;
+        margin-right: 20px;
+
+    }
+
+
+}
+/* Smaller than standard 960 (devices and browsers) */
+@media screen and (max-width: 959px) {
+
+    .TopBar-Grid-Container{
+        display: grid;
+        height : 120px;
+        background-color: #202124;
+        box-shadow: 0px 3px 9px black;
+        position: fixed;
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 60px;
+    }
+
+    .TopBar-Grid-Container__Item:nth-child(2){
+        display: none;
+    }
+    .TopBar-Grid-Container__Item:nth-child(3){
+        display: grid;
+        grid-template-columns: 1fr 50px;
+    }
+    #NAV_TOGGLE{
+        color : white;
+        width : 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+    .TopBar-Grid-Container__Item__Nav-Toogle-Container{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width : 50px;
+        height : 50px;
+    }
+    
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+
+
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media screen and (max-width: 767px) {
+
+    .TopBar-Grid-Container__Item:nth-child(2){
+        display: none;
+    }
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media screen and (max-width: 479px) {
+
+}

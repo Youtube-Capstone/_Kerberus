@@ -1,0 +1,147 @@
+.SideBar-Container{
+    
+    height : auto;
+    overflow-y: auto;
+    background-color: #202124;
+
+}
+.SideBar-Container__Row{
+
+    color : white;
+    display: grid;
+    height : 50px;
+    transition: height 1000ms ease;
+
+}
+.SideBar-Container__Row:hover{
+    
+    color : hsl(54, 100%, 81%);
+    cursor: pointer;
+
+}
+.Row__Item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Row__Item:nth-child(2){
+    justify-content: flex-start;
+}
+.SideBar-Container__Row__Text a{
+    color : inherit;
+    text-decoration: none;
+}
+
+/* #Media Queries
+================================================== */
+
+/* Large Desktop */
+@media screen and (min-width: 1441px) {
+
+    .SideBar-Container{
+
+        min-height: calc(100vh - 75px);
+        height: calc(100vh - 75px);
+        padding-top : 75px;
+        
+    }
+    .SideBar-Container__Row{
+
+        height : 50px;
+        grid-template-columns: 2fr 5fr 1fr;
+        
+    }
+    .SideBar-Container__Row__Icon{
+
+        width : 30px;
+        height : 30px;
+
+    }
+    .SideBar-Container__Row__Text{
+
+        font-size: 20px;
+
+    }
+    .SideBar-Container__Row__Icon-Arrow{
+
+        width : 30px;
+        height : 30px;
+
+    }
+}
+/* Smaller that standard */
+@media screen and (min-width: 960px) and (max-width: 1440px) {
+
+    .SideBar-Container{
+
+        min-height: calc(100vh - 75px);
+        height: calc(100vh - 75px);
+        padding-top: 75px;
+        
+    }
+
+    .SideBar-Container__Row{
+
+        height : 50px;
+        grid-template-columns: 2fr 5fr 1fr;
+        
+    }
+    .SideBar-Container__Row__Icon{
+        width : 20px;
+        height : 20px;
+    }
+    .SideBar-Container__Row__Text{
+        font-size: 18px;
+    }
+    .SideBar-Container__Row__Icon-Arrow{
+        width : 20px;
+        height : 20px;
+    }
+
+}
+/* Smaller than standard 960 (devices and browsers) */
+@media screen and (max-width: 959px) {
+    
+    .SideBar-Container{
+        height : calc(100vh - 120px);
+    }
+
+    .SideBar-Container__Row{
+
+        height : 50px;
+        grid-template-columns: 70px 1fr 50px;
+        
+    }
+    .SideBar-Container__Row__Icon{
+        width : 30px;
+        height : 30px;
+    }
+    .SideBar-Container__Row__Text{
+        font-size: 18px;
+    }
+    .SideBar-Container__Row__Icon-Arrow{
+        width : 30px;
+        height : 30px;
+    }
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media screen and (max-width: 767px) {
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media screen and (max-width: 479px) {
+
+}

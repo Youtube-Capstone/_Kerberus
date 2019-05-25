@@ -1,0 +1,18 @@
+@font-face{
+    font-family: "NotoSansKR";
+    src: url("../fonts/NotoSansKR-Medium-Hestia.woff") format("woff");
+    font-weight: normal;
+}
+@font-face{
+    font-family: "NotoSansKR";
+    src: url("../fonts/NotoSansKR-Bold-Hestia.woff") format("woff");
+    font-weight: bold;
+}
+html,body{
+    margin : 0;
+    padding : 0;
+}
+*{
+
+    font-family: "NotoSansKR",sans-serif;
+}
