@@ -182,6 +182,8 @@ class crawling:
                                        {'class': 'style-scope ytd-watch-flexy'})
         self.secondary = video_html.find('ytd-video-secondary-info-renderer',
                                          {'class': 'style-scope ytd-watch-flexy'})
+        self.comments = video_html.find('ytd-item-section-renderer',
+                                        {'class': 'style-scope ytd-comments'})
 
         video_driver.quit()
         print("finish getvideo")
@@ -243,7 +245,7 @@ class crawling:
         comment = []
         comment_count = 0
         print("start getcomment")
-        comment_count_check = self.video_html.find('yt-formatted-string',
+        comment_count_check = self.comments.find('yt-formatted-string',
                                                    {
                                                        'class': 'count-text style-scope ytd-comments-header-renderer'}).text
         if self.__extraction(comment_count_check) == 0:
@@ -251,10 +253,10 @@ class crawling:
             print("finish getcomment")
             return comment_count, comment
 
-        video_comment_text = self.video_html.find_all('yt-formatted-string',
-                                                      {'id': 'content-text'})  # 한 동영상에 대한 모든 댓글 태그 가져옴
-        video_comment_writer = self.video_html.find_all('a',
-                                                        {'id': 'author-text'})
+        video_comment_text = self.comments.find_all('yt-formatted-string',
+                                                    {'id': 'content-text'})  # 한 동영상에 대한 모든 댓글 태그 가져옴
+        video_comment_writer = self.comments.find_all('a',
+                                                      {'id': 'author-text'})
         for i in range(len(video_comment_text)):
             if not self.__findhangul(video_comment_text[i].text.strip()):
                 continue

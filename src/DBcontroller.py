@@ -102,6 +102,8 @@ class DBcontroller:
                            "CONTENT  varchar(2048) NOT NULL, " \
                            "CRAWLED_REPLY_DATE  DATE NOT NULL, " \
                            "AUTHOR  varchar(255) NOT NULL, " \
+                           "NOUNS_FROM_COMMENT varchar(1023) NOT NULL," \
+                           "SENTIMENTAL int, " \
                            "PRIMARY KEY (ID))"
         return_schema_Query = Reply_ref_schema.format(reply_table_name)
         return return_schema_Query
@@ -178,8 +180,8 @@ class DBcontroller:
         self.check_connect_and_reconnect()
 
         # 댓글 table 이름과 attribute 를 입력 받으면 DB 댓글 테이블에 넣어주고 1 -1
-        reply_table_schema = "(CONTENT, CRAWLED_REPLY_DATE, AUTHOR)"
-        Query_string = 'insert into {}{} values ("{}", "{}", "{}")'.format(table_name, reply_table_schema, content,
+        reply_table_schema = "(CONTENT, CRAWLED_REPLY_DATE, AUTHOR, NOUNS_FROM_COMMENT)"
+        Query_string = 'insert into {}{} values ("{}", "{}", "{}", "")'.format(table_name, reply_table_schema, content,
                                                                            crawled_reply_date, author)
 
         self.execQuery(Query_string)

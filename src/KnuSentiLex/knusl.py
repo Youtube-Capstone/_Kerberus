@@ -13,7 +13,7 @@
 # -*-coding:utf-8-*-
 
 import json
-import hgtk
+#import hgtk
 
 class KnuSL():
 
@@ -21,8 +21,11 @@ class KnuSL():
         with open('./KnuSentiLex/data/SentiWord_info.json','r',encoding='utf-8-sig') as f:
             data = json.load(f)
 
-        result = None
+        result = []
         for i in range(0, len(data)):
+            if data[i]['word'] in wordname:
+                result.append(int(data[i]['polarity']))
+            '''
             if not hgtk.checker.is_hangul(data[i]['word'].replace(' ','')):
                 continue
             elif hgtk.letter.decompose(wordname[0])[0] != hgtk.letter.decompose(data[i]['word'][0])[0]:
@@ -31,10 +34,8 @@ class KnuSL():
                 if wordname in data[i]['word'] or wordname in data[i]['word_root']:
                     result = int(data[i]['polarity'])
                     break
-                    # result.append(data[i]['word_root'])
-                    # result.append(data[i]['polarity'])
-
-        # r_word = result[0]  # 어근
-        s_word = result  # 극성
+            '''
+            
+        s_word = result
 
         return s_word
