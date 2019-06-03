@@ -49,7 +49,7 @@
 - DashBoard : Kerberus 서비스의 이용과 데이터에 대한 상황 안내
 - Category : 데이터베이스내에 저장된 하위 카테고리에 대한 네비게이션, 해당 카테고리에 대한 데이터 상태와 저장된 제품들을 나열한다.
 - CategoryContentBox : 나열된 제품에 대한 상세정보를 나타내기 위한 컴포넌트, 제품에 대한 선호도 , 감정 분석 결과 , 긍정 및 부정 지수가 높은 댓글들을 나열합니다.
-- Comparison : 제품간 하드웨어 사양 비교를 위한 컴포넌트
+- Comparison : 제품간 하드웨어 사양 비교를 위한 컴포넌트, 다중 제품에 대한 가격 비교 , 감정 분석 긍부정 수치 비교 , 하드웨어 사양 비교
 
 ## 5. 개발 화면
 
@@ -76,6 +76,18 @@
 #### (Narrow View)
 
  ![compare_narrow](./images/product_compare_swallow.png)
+
+#### (Price Compare Today)
+
+ ![compare_price_today](./images/compare_price_today.png)
+
+ #### (Price Compare Week)
+
+ ![compare_price_week](./images/compare_price_week.png)
+
+ #### (Preference Compare)
+
+ ![compare_preference](./images/compare_preference.png)
 
 <hr />
 
