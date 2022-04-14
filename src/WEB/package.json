@@ -11,7 +11,7 @@
   "author": "Kerberus",
   "license": "ISC",
   "dependencies": {
-    "async": "^2.6.2",
+    "async": "^3.2.2",
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "bson-ext": "^2.0.1",
