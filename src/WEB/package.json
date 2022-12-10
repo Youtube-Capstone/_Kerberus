@@ -16,7 +16,7 @@
     "body-parser": "^1.18.3",
     "bson-ext": "^2.0.1",
     "cors": "^2.8.5",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "filepond": "^3.3.2",
     "filepond-plugin-file-rename": "^1.1.0",
     "filepond-plugin-file-validate-size": "^2.0.0",
